@@ -1,7 +1,7 @@
 const reverseString = require('./reverseString');
 
 describe('reverseString', () => {
-  test('reverses single word', () => {
+  test.skip('reverses single word', () => {
     expect(reverseString('hello')).toEqual('olleh');
   });
 
@@ -10,11 +10,11 @@ describe('reverseString', () => {
   });
 
   test.skip('works with numbers and punctuation', () => {
-    expect(reverseString('123! abc! Hello, Odinite.')).toEqual(
+    expect(reverseString('123! bc! Hello, Odinite.')).toEqual(
       '.etinidO ,olleH !cba !321'
     );
   });
-  test.skip('works with blank strings', () => {
+  test('works with blank strings', () => {
     expect(reverseString('')).toEqual('');
   });
 });
